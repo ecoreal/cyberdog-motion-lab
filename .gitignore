@@ -1,0 +1,30 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local binaries/downloads
+programs/
+*.AppImage
+*.iso
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Temporary files
+tmp/
+temp/
+*.log
+

@@ -1,0 +1,10 @@
+sudo docker run -it --privileged=true -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix cyberdog_sim:v2026
+cd /home/cyberdog_sim	
+python3 src/cyberdog_simulator/cyberdog_gazebo/script/launchsim.py
+
+git clone https://github.com/MiRoboticsLab/loco_hl_example.git
+
+source /opt/ros/galactic/setup.bash
+source /home/cyberdog_sim/install/setup.bash
+python3 /home/cyberdog_sim/pose_monitor.py
+
